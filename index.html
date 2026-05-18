@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title
+    data-de="Ahnenecho - Das digitale Familienarchiv | Geschichten bewahren"
+    data-en="Ahnenecho - The Digital Family Archive | Preserve What Matters"
+  >Ahnenecho - Das digitale Familienarchiv</title>
+  <meta name="description"
+    data-de="Ahnenecho bewahrt Familiengeschichten, Rezepte, Traditionen und Weisheiten - gemeinsam und generationsübergreifend. Kostenlos starten."
+    data-en="Ahnenecho preserves family stories, recipes, traditions, and wisdom - together across generations. Start for free."
+    content="Ahnenecho bewahrt Familiengeschichten, Rezepte, Traditionen und Weisheiten - gemeinsam und generationsübergreifend."
+  />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Ahnenecho - Das digitale Familienarchiv" />
+  <meta property="og:description" content="Kein Familienwissen soll verloren gehen." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ahnenecho-lp.vercel.app" />
+  <link rel="icon" type="image/svg+xml" href="app-icon-light.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER / NAVIGATION
+     ============================================================ -->
+<header class="header" role="banner">
+  <div class="container">
+    <nav class="nav" role="navigation" aria-label="Hauptnavigation">
+      <a href="#hero" class="nav-logo" aria-label="Ahnenecho - Startseite">
+        <img src="app-icon-light.svg" alt="" width="32" height="38" aria-hidden="true" />
+        <span class="logo-part-dark">Ahnen</span><span class="logo-part-amber">echo</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#features" data-de="Funktionen" data-en="Features">Funktionen</a></li>
+        <li><a href="#how-it-works" data-de="So funktioniert's" data-en="How it works">So funktioniert's</a></li>
+        <li><a href="#pricing" data-de="Preise" data-en="Pricing">Preise</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Sprache / Language">
+          <button class="lang-btn active" data-lang="de" aria-label="Deutsch">DE</button>
+          <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        </div>
+        <a href="https://ahnenecho-lp.vercel.app" class="btn btn-primary nav-cta"
+           data-de="App starten" data-en="Open App"
+           target="_blank" rel="noopener noreferrer">App starten</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+      <a href="#features" data-de="Funktionen" data-en="Features">Funktionen</a>
+      <a href="#how-it-works" data-de="So funktioniert's" data-en="How it works">So funktioniert's</a>
+      <a href="#pricing" data-de="Preise" data-en="Pricing">Preise</a>
+      <a href="impressum.html" data-de="Impressum" data-en="Imprint">Impressum</a>
+      <a href="https://ahnenecho-lp.vercel.app" class="btn btn-primary"
+         data-de="App starten" data-en="Open App"
+         target="_blank" rel="noopener noreferrer">App starten</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<main>
+<section class="hero" id="hero" aria-labelledby="hero-heading">
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- Left: Text content -->
+      <div class="hero-text">
+        <div class="hero-badge" aria-hidden="true">
+          🔥 <span data-de="Kein Familienwissen soll verloren gehen" data-en="No family knowledge should be lost">Kein Familienwissen soll verloren gehen</span>
+        </div>
+
+        <h1 class="hero-headline" id="hero-heading">
+          <span data-de="Das Feuer deiner Familie," data-en="Your family's flame,">Das Feuer deiner Familie,</span><br />
+          <span class="text-amber" data-de="für immer am Brennen." data-en="burning forever.">für immer am Brennen.</span>
+        </h1>
+
+        <p class="hero-sub"
+           data-de="Omas Rezepte. Opas Kriegsgeschichten. Die Traditionen, die eure Familie zusammenhalten. Alles verschwindet - es sei denn, ihr bewahrt es gemeinsam."
+           data-en="Grandma's recipes. Grandpa's war stories. The traditions that hold your family together. All of it disappears - unless you preserve it together.">
+          Omas Rezepte. Opas Kriegsgeschichten. Die Traditionen, die eure Familie zusammenhalten. Alles verschwindet - es sei denn, ihr bewahrt es gemeinsam.
+        </p>
+
+        <div class="hero-cta">
+          <a href="https://ahnenecho-lp.vercel.app" class="btn btn-primary btn-large"
+             data-de="Kostenlos starten" data-en="Start for free"
+             target="_blank" rel="noopener noreferrer">Kostenlos starten</a>
+          <a href="#how-it-works" class="btn btn-secondary btn-large"
+             data-de="Wie es funktioniert" data-en="How it works">Wie es funktioniert</a>
+        </div>
+
+        <div class="hero-social-proof">
+          <div class="hero-avatars" aria-hidden="true">
+            <div class="hero-avatar">C</div>
+            <div class="hero-avatar">H</div>
+            <div class="hero-avatar">L</div>
+            <div class="hero-avatar">M</div>
+          </div>
+          <span data-de="Familien bewahren ihr Erbe mit Ahnenecho" data-en="Families preserve their legacy with Ahnenecho">Familien bewahren ihr Erbe mit Ahnenecho</span>
+        </div>
+      </div>
+
+      <!-- Right: Demo card -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="vault-card-demo">
+          <div class="vault-header">
+            <div class="vault-icon-wrap">🏠</div>
+            <div>
+              <div class="vault-name" data-de="Familie Müller" data-en="The Müller Family">Familie Müller</div>
+              <div class="vault-meta" data-de="4 Mitglieder · Seit 2024" data-en="4 members · Since 2024">4 Mitglieder · Seit 2024</div>
+            </div>
+          </div>
+
+          <div class="vault-categories">
+            <div class="vault-cat">
+              <span class="vault-cat-icon">📖</span>
+              <div class="vault-cat-label" data-de="Geschichten" data-en="Stories">Geschichten</div>
+              <div class="vault-cat-count">12</div>
+            </div>
+            <div class="vault-cat">
+              <span class="vault-cat-icon">🍲</span>
+              <div class="vault-cat-label" data-de="Rezepte" data-en="Recipes">Rezepte</div>
+              <div class="vault-cat-count">8</div>
+            </div>
+            <div class="vault-cat">
+              <span class="vault-cat-icon">✨</span>
+              <div class="vault-cat-label" data-de="Traditionen" data-en="Traditions">Traditionen</div>
+              <div class="vault-cat-count">5</div>
+            </div>
+            <div class="vault-cat">
+              <span class="vault-cat-icon">💬</span>
+              <div class="vault-cat-label" data-de="Weisheiten" data-en="Wisdom">Weisheiten</div>
+              <div class="vault-cat-count">19</div>
+            </div>
+            <div class="vault-cat">
+              <span class="vault-cat-icon">📍</span>
+              <div class="vault-cat-label" data-de="Orte" data-en="Places">Orte</div>
+              <div class="vault-cat-count">6</div>
+            </div>
+            <div class="vault-cat">
+              <span class="vault-cat-icon">📷</span>
+              <div class="vault-cat-label" data-de="Fotos" data-en="Photos">Fotos</div>
+              <div class="vault-cat-count">34</div>
+            </div>
+          </div>
+
+          <div class="prompt-card">
+            <div class="prompt-label" data-de="🤖 KI-Prompt diese Woche" data-en="🤖 AI prompt this week">🤖 KI-Prompt diese Woche</div>
+            <div class="prompt-text"
+                 data-de='"Was war der schönste Sommer deiner Kindheit?"'
+                 data-en='"What was the most beautiful summer of your childhood?"'>
+              "Was war der schönste Sommer deiner Kindheit?"
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STATS BAR
+     ============================================================ -->
+<section class="stats-section" aria-label="Statistiken">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="fade-up">
+        <div class="stat-number">90%</div>
+        <div class="stat-label" data-de="des mündlichen Wissens geht verloren" data-en="of oral knowledge is lost">des mündlichen Wissens geht verloren</div>
+      </div>
+      <div class="fade-up">
+        <div class="stat-number">6</div>
+        <div class="stat-label" data-de="Wissenskategorien strukturiert" data-en="structured knowledge categories">Wissenskategorien strukturiert</div>
+      </div>
+      <div class="fade-up">
+        <div class="stat-number">DSGVO</div>
+        <div class="stat-label" data-de="konform, Server in Europa" data-en="compliant, servers in Europe">konform, Server in Europa</div>
+      </div>
+      <div class="fade-up">
+        <div class="stat-number">∞</div>
+        <div class="stat-label" data-de="Generationen, die davon profitieren" data-en="generations to benefit">Generationen, die davon profitieren</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROBLEM SECTION
+     ============================================================ -->
+<section class="problem-section" id="problem" aria-labelledby="problem-heading">
+  <div class="container">
+    <span class="section-label" data-de="Das Problem" data-en="The Problem">Das Problem</span>
+    <h2 class="section-heading" id="problem-heading">
+      <span data-de="Jeden Tag geht ein Stück eurer Familiengeschichte verloren." data-en="Every day, a piece of your family history disappears.">
+        Jeden Tag geht ein Stück eurer Familiengeschichte verloren.
+      </span>
+    </h2>
+    <p class="section-intro"
+       data-de="WhatsApp-Gruppen sind kein Archiv. Fotoalben verstauben. Und niemand fragt die Großeltern - bis es zu spät ist."
+       data-en="WhatsApp groups are not an archive. Photo albums collect dust. And nobody asks the grandparents - until it's too late.">
+      WhatsApp-Gruppen sind kein Archiv. Fotoalben verstauben. Und niemand fragt die Großeltern - bis es zu spät ist.
+    </p>
+
+    <blockquote class="blockquote-card fade-up">
+      <span data-de='"Schwiegermutter macht die beste Linzertorte der Welt - aber niemand hat das Rezept."' data-en='"My mother-in-law makes the world\'s best Linzer cake - but nobody has the recipe."'>
+        "Schwiegermutter macht die beste Linzertorte der Welt - aber niemand hat das Rezept."
+      </span>
+      <br /><small style="font-style:normal; color: var(--gray-400); font-size: .875rem;" data-de="- Claudia, 42, München" data-en="- Claudia, 42, Munich">- Claudia, 42, München</small>
+    </blockquote>
+
+    <div class="problem-cards">
+      <div class="problem-card fade-up">
+        <div class="problem-card-icon">💬</div>
+        <h3 data-de="Mündlich überliefertes Wissen" data-en="Oral tradition lost">Mündlich überliefertes Wissen</h3>
+        <p data-de="90 % des mündlich überlieferten Wissens einer Familie gehen innerhalb von zwei Generationen verloren."
+           data-en="90% of a family's oral knowledge is lost within two generations.">
+          90 % des mündlich überlieferten Wissens einer Familie gehen innerhalb von zwei Generationen verloren.
+        </p>
+      </div>
+      <div class="problem-card fade-up">
+        <div class="problem-card-icon">📱</div>
+        <h3 data-de="Kein echtes Archiv" data-en="No real archive">Kein echtes Archiv</h3>
+        <p data-de="WhatsApp-Nachrichten werden gelöscht, Fotos verlieren ihren Kontext, Google Fotos hat keine Struktur."
+           data-en="WhatsApp messages get deleted, photos lose context, and Google Photos has no structure.">
+          WhatsApp-Nachrichten werden gelöscht, Fotos verlieren ihren Kontext, Google Fotos hat keine Struktur.
+        </p>
+      </div>
+      <div class="problem-card fade-up">
+        <div class="problem-card-icon">⏳</div>
+        <h3 data-de="Die Zeit läuft" data-en="Time is running out">Die Zeit läuft</h3>
+        <p data-de="Großeltern werden älter. Jedes Jahr ohne Archiv ist ein Jahr verlorener Geschichten, Rezepte und Weisheiten."
+           data-en="Grandparents are getting older. Every year without an archive is a year of lost stories, recipes, and wisdom.">
+          Großeltern werden älter. Jedes Jahr ohne Archiv ist ein Jahr verlorener Geschichten, Rezepte und Weisheiten.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FEATURES
+     ============================================================ -->
+<section class="features-section" id="features" aria-labelledby="features-heading">
+  <div class="container">
+    <span class="section-label" data-de="Funktionen" data-en="Features">Funktionen</span>
+    <h2 class="section-heading" id="features-heading">
+      <span data-de="Alles, was eure Familie braucht." data-en="Everything your family needs.">Alles, was eure Familie braucht.</span>
+    </h2>
+    <p class="section-intro"
+       data-de="Sechs strukturierte Kategorien. Ein gemeinsames Archiv. Für alle Generationen."
+       data-en="Six structured categories. One shared archive. For all generations.">
+      Sechs strukturierte Kategorien. Ein gemeinsames Archiv. Für alle Generationen.
+    </p>
+
+    <div class="features-grid">
+
+      <div class="feature-card fade-up">
+        <div class="feature-icon-wrap fi-amber">📖</div>
+        <h3 data-de="Familiengeschichten" data-en="Family Stories">Familiengeschichten</h3>
+        <p data-de="Schreibt, sprecht oder tippt Erinnerungen - strukturiert nach Person, Zeit und Thema. Jede Geschichte bleibt für immer erhalten."
+           data-en="Write, speak, or type memories - organized by person, time, and topic. Every story is preserved forever.">
+          Schreibt, sprecht oder tippt Erinnerungen - strukturiert nach Person, Zeit und Thema.
+        </p>
+      </div>
+
+      <div class="feature-card fade-up">
+        <div class="feature-icon-wrap fi-orange">🍲</div>
+        <h3 data-de="Familienrezepte" data-en="Family Recipes">Familienrezepte</h3>
+        <p data-de="Omas Gulasch. Uromas Weihnachtsplätzchen. Jedes Rezept mit Zutaten, Mengen, Fotos und der Geschichte dahinter."
+           data-en="Grandma's goulash. Great-grandma's Christmas cookies. Every recipe with ingredients, quantities, photos, and the story behind it.">
+          Omas Gulasch. Uromas Weihnachtsplätzchen. Jedes Rezept mit Zutaten, Mengen, Fotos und der Geschichte dahinter.
+        </p>
+      </div>
+
+      <div class="feature-card fade-up">
+        <div class="feature-icon-wrap fi-yellow">✨</div>
+        <h3 data-de="Traditionen" data-en="Traditions">Traditionen</h3>
+        <p data-de="Warum feiert eure Familie so? Welche Bräuche gehören dazu? Dokumentiert Feste, Rituale und Gewohnheiten, die eure Familie einzigartig machen."
+           data-en="Why does your family celebrate the way it does? Document the customs, rituals, and habits that make your family unique.">
+          Warum feiert eure Familie so? Dokumentiert Feste, Rituale und Gewohnheiten, die eure Familie einzigartig machen.
+        </p>
+      </div>
+
+      <div class="feature-card fade-up">
+        <div class="feature-icon-wrap fi-emerald">💬</div>
+        <h3 data-de="Lebensweisheiten" data-en="Life Wisdom">Lebensweisheiten</h3>
+        <p data-de="Was hat Opa immer gesagt? Welcher Ratschlag hat euer Leben verändert? Die wertvollsten Worte verdienen einen festen Platz."
+           data-en="What did grandpa always say? Which advice changed your life? The most valuable words deserve a permanent place.">
+          Was hat Opa immer gesagt? Welcher Ratschlag hat euer Leben verändert?
+        </p>
+      </div>
+
+      <div class="feature-card fade-up">
+        <div class="feature-icon-wrap fi-blue">📍</div>
+        <h3 data-de="Herkunftsorte" data-en="Family Places">Herkunftsorte</h3>
+        <p data-de="Woher kommt eure Familie? Alte Heimatorte, Auswanderungsgeschichten, besondere Reisen - alle Orte auf der Karte."
+           data-en="Where does your family come from? Old hometowns, emigration stories, special journeys - all places on the map.">
+          Woher kommt eure Familie? Alte Heimatorte, Auswanderungsgeschichten, besondere Reisen.
+        </p>
+      </div>
+
+      <div class="feature-card fade-up">
+        <div class="feature-icon-wrap fi-purple">📷</div>
+        <h3 data-de="Familienfotos" data-en="Family Photos">Familienfotos</h3>
+        <p data-de="Fotos mit Kontext: Wer ist drauf? Wann? Wo? Was war der Anlass? Nicht nur Bilder, sondern Erinnerungen."
+           data-en="Photos with context: Who's in it? When? Where? What was the occasion? Not just images, but memories.">
+          Fotos mit Kontext: Wer ist drauf? Wann? Wo? Nicht nur Bilder, sondern Erinnerungen.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW IT WORKS
+     ============================================================ -->
+<section class="how-section" id="how-it-works" aria-labelledby="how-heading">
+  <div class="container">
+    <span class="section-label" data-de="So funktioniert's" data-en="How it works">So funktioniert's</span>
+    <h2 class="section-heading" id="how-heading">
+      <span data-de="In vier Schritten zum Familienarchiv." data-en="Four steps to your family archive.">In vier Schritten zum Familienarchiv.</span>
+    </h2>
+
+    <div class="steps-grid">
+      <div class="step-item fade-up">
+        <div class="step-number" aria-hidden="true">1</div>
+        <h3 data-de="Archiv erstellen" data-en="Create archive">Archiv erstellen</h3>
+        <p data-de="Kostenlos registrieren und euer gemeinsames Familienarchiv (Vault) anlegen."
+           data-en="Register for free and create your shared family archive (Vault).">
+          Kostenlos registrieren und euer gemeinsames Familienarchiv (Vault) anlegen.
+        </p>
+      </div>
+      <div class="step-item fade-up">
+        <div class="step-number" aria-hidden="true">2</div>
+        <h3 data-de="Familie einladen" data-en="Invite family">Familie einladen</h3>
+        <p data-de="Per E-Mail-Link die ganze Familie einladen - einfach, ohne technisches Wissen."
+           data-en="Invite the whole family via email link - simple, no technical knowledge needed.">
+          Per E-Mail-Link die ganze Familie einladen - einfach, ohne technisches Wissen.
+        </p>
+      </div>
+      <div class="step-item fade-up">
+        <div class="step-number" aria-hidden="true">3</div>
+        <h3 data-de="Wissen bewahren" data-en="Preserve knowledge">Wissen bewahren</h3>
+        <p data-de="Jeder trägt bei - schreiben, sprechen, Fotos hochladen. KI-Prompts helfen beim Erinnern."
+           data-en="Everyone contributes - writing, speaking, uploading photos. AI prompts help trigger memories.">
+          Jeder trägt bei - schreiben, sprechen, Fotos hochladen. KI-Prompts helfen beim Erinnern.
+        </p>
+      </div>
+      <div class="step-item fade-up">
+        <div class="step-number" aria-hidden="true">4</div>
+        <h3 data-de="Erbe weitergeben" data-en="Pass on the legacy">Erbe weitergeben</h3>
+        <p data-de="Das Archiv wächst und bleibt für immer - ein lebendiges Erbe für eure Kinder und Kindeskinder."
+           data-en="The archive grows and lasts forever - a living legacy for your children and grandchildren.">
+          Das Archiv wächst und bleibt für immer - ein lebendiges Erbe für eure Kinder und Kindeskinder.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     AI PROMPTS SECTION
+     ============================================================ -->
+<section class="ai-section" id="ai" aria-labelledby="ai-heading">
+  <div class="container">
+    <div class="ai-inner">
+
+      <div>
+        <span class="section-label" data-de="KI-gestützte Prompts" data-en="AI-powered prompts">KI-gestützte Prompts</span>
+        <h2 id="ai-heading" style="margin-bottom: 1.25rem;">
+          <span data-de="Wir erinnern euch daran, zu fragen." data-en="We remind you to ask.">Wir erinnern euch daran, zu fragen.</span>
+        </h2>
+        <p style="margin-bottom: 2rem;"
+           data-de="Jeden Montag erhalten alle Familienmitglieder eine persönliche Frage - sanft formuliert, tief bedeutsam. Oma muss keine App bedienen. Sie antwortet einfach."
+           data-en="Every Monday, all family members receive a personal question - gently worded, deeply meaningful. Grandma doesn't need to operate any app. She simply answers.">
+          Jeden Montag erhalten alle Familienmitglieder eine persönliche Frage - sanft formuliert, tief bedeutsam.
+        </p>
+
+        <div class="ai-prompts-list">
+          <div class="prompt-example"
+               data-de='"Was war der wichtigste Ratschlag, den du je bekommen hast?"'
+               data-en='"What was the most important piece of advice you ever received?"'>
+            "Was war der wichtigste Ratschlag, den du je bekommen hast?"
+          </div>
+          <div class="prompt-example"
+               data-de='"Welches Gericht verbindest du mit Geborgenheit als Kind?"'
+               data-en='"Which dish do you associate with feeling safe as a child?"'>
+            "Welches Gericht verbindest du mit Geborgenheit als Kind?"
+          </div>
+          <div class="prompt-example"
+               data-de='"Was möchtest du deinen Enkeln unbedingt mitgeben?"'
+               data-en='"What do you most want to pass on to your grandchildren?"'>
+            "Was möchtest du deinen Enkeln unbedingt mitgeben?"
+          </div>
+        </div>
+      </div>
+
+      <div class="ai-features">
+        <div class="ai-feature fade-up">
+          <div class="ai-feature-icon">🎙️</div>
+          <div class="ai-feature-text">
+            <h4 data-de="Spracheingabe" data-en="Voice input">Spracheingabe</h4>
+            <p data-de="Ältere Familienmitglieder sprechen einfach - die App schreibt automatisch auf."
+               data-en="Older family members simply speak - the app transcribes automatically.">
+              Ältere Familienmitglieder sprechen einfach - die App schreibt automatisch auf.
+            </p>
+          </div>
+        </div>
+        <div class="ai-feature fade-up">
+          <div class="ai-feature-icon">🌳</div>
+          <div class="ai-feature-text">
+            <h4 data-de="Interaktiver Stammbaum" data-en="Interactive family tree">Interaktiver Stammbaum</h4>
+            <p data-de="Verknüpft Geschichten und Fotos direkt mit Personen im Familienstammbaum."
+               data-en="Link stories and photos directly to people in the family tree.">
+              Verknüpft Geschichten und Fotos direkt mit Personen im Familienstammbaum.
+            </p>
+          </div>
+        </div>
+        <div class="ai-feature fade-up">
+          <div class="ai-feature-icon">👨‍👩‍👧‍👦</div>
+          <div class="ai-feature-text">
+            <h4 data-de="Familienrollen" data-en="Family roles">Familienrollen</h4>
+            <p data-de="Flexible Rollen: Admin verwaltet, Mitglieder tragen bei - jeder so viel wie möglich."
+               data-en="Flexible roles: Admin manages, members contribute - everyone at their own pace.">
+              Flexible Rollen: Admin verwaltet, Mitglieder tragen bei - jeder so viel wie möglich.
+            </p>
+          </div>
+        </div>
+        <div class="ai-feature fade-up">
+          <div class="ai-feature-icon">📤</div>
+          <div class="ai-feature-text">
+            <h4 data-de="Datenexport jederzeit" data-en="Data export anytime">Datenexport jederzeit</h4>
+            <p data-de="Eure Daten gehören euch. Vollständiger Export jederzeit, ohne Einschränkungen."
+               data-en="Your data belongs to you. Full export at any time, without restrictions.">
+              Eure Daten gehören euch. Vollständiger Export jederzeit, ohne Einschränkungen.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRICING
+     ============================================================ -->
+<section class="pricing-section" id="pricing" aria-labelledby="pricing-heading">
+  <div class="container" style="text-align: center;">
+    <span class="section-label" data-de="Preise" data-en="Pricing">Preise</span>
+    <h2 class="section-heading" id="pricing-heading">
+      <span data-de="Weniger als ein Kaffee im Monat." data-en="Less than a coffee a month.">Weniger als ein Kaffee im Monat.</span>
+    </h2>
+    <p class="section-intro" style="margin: 0 auto 0;"
+       data-de="Ein Erbe für immer. Kostenlos starten, jederzeit upgraden."
+       data-en="A legacy forever. Start free, upgrade anytime.">
+      Ein Erbe für immer. Kostenlos starten, jederzeit upgraden.
+    </p>
+
+    <div class="pricing-grid">
+
+      <div class="pricing-card fade-up">
+        <h3 data-de="Kostenlos" data-en="Free">Kostenlos</h3>
+        <div class="price">€0 <span data-de="/ Monat" data-en="/ month">/ Monat</span></div>
+        <div class="price-note" data-de="Für immer kostenlos" data-en="Forever free">Für immer kostenlos</div>
+        <ul>
+          <li data-de="1 Familienarchiv (Vault)" data-en="1 family archive (Vault)">1 Familienarchiv (Vault)</li>
+          <li data-de="Bis zu 5 Familienmitglieder" data-en="Up to 5 family members">Bis zu 5 Familienmitglieder</li>
+          <li data-de="Alle 6 Wissenskategorien" data-en="All 6 knowledge categories">Alle 6 Wissenskategorien</li>
+          <li data-de="KI-Prompts wöchentlich" data-en="Weekly AI prompts">KI-Prompts wöchentlich</li>
+          <li data-de="1 GB Speicher" data-en="1 GB storage">1 GB Speicher</li>
+        </ul>
+        <a href="https://ahnenecho-lp.vercel.app" class="btn btn-secondary"
+           data-de="Kostenlos starten" data-en="Start for free"
+           target="_blank" rel="noopener noreferrer">Kostenlos starten</a>
+      </div>
+
+      <div class="pricing-card featured fade-up">
+        <span class="pricing-badge" data-de="Empfohlen" data-en="Recommended">Empfohlen</span>
+        <h3 data-de="Pro" data-en="Pro">Pro</h3>
+        <div class="price">€9,90 <span data-de="/ Monat" data-en="/ month">/ Monat</span></div>
+        <div class="price-note" data-de="pro Familien-Vault" data-en="per family vault">pro Familien-Vault</div>
+        <ul>
+          <li data-de="Unbegrenzte Familienmitglieder" data-en="Unlimited family members">Unbegrenzte Familienmitglieder</li>
+          <li data-de="Unbegrenzte Einträge" data-en="Unlimited entries">Unbegrenzte Einträge</li>
+          <li data-de="50 GB Medienspeicher" data-en="50 GB media storage">50 GB Medienspeicher</li>
+          <li data-de="Stammbaum-Funktion" data-en="Family tree feature">Stammbaum-Funktion</li>
+          <li data-de="Spracheingabe & KI-Transkription" data-en="Voice input & AI transcription">Spracheingabe &amp; KI-Transkription</li>
+          <li data-de="Datenexport (PDF, JSON)" data-en="Data export (PDF, JSON)">Datenexport (PDF, JSON)</li>
+          <li data-de="Prioritäts-Support" data-en="Priority support">Prioritäts-Support</li>
+        </ul>
+        <a href="https://ahnenecho-lp.vercel.app" class="btn btn-primary"
+           data-de="Pro starten" data-en="Start Pro"
+           target="_blank" rel="noopener noreferrer">Pro starten</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRUST / SECURITY
+     ============================================================ -->
+<section class="trust-section" aria-labelledby="trust-heading">
+  <div class="container">
+    <span class="section-label" data-de="Sicherheit & Vertrauen" data-en="Security & Trust">Sicherheit &amp; Vertrauen</span>
+    <h2 class="section-heading" id="trust-heading">
+      <span data-de="Eure Daten sind sicher." data-en="Your data is safe.">Eure Daten sind sicher.</span>
+    </h2>
+
+    <div class="trust-grid">
+      <div class="trust-item fade-up">
+        <div class="trust-icon">🇪🇺</div>
+        <h4 data-de="DSGVO-konform" data-en="GDPR compliant">DSGVO-konform</h4>
+        <p data-de="Alle Daten werden auf europäischen Servern verarbeitet und gespeichert. Volle DSGVO-Konformität."
+           data-en="All data is processed and stored on European servers. Full GDPR compliance.">
+          Alle Daten werden auf europäischen Servern verarbeitet und gespeichert.
+        </p>
+      </div>
+      <div class="trust-item fade-up">
+        <div class="trust-icon">🔒</div>
+        <h4 data-de="Verschlüsselt" data-en="Encrypted">Verschlüsselt</h4>
+        <p data-de="Übertragung und Speicherung erfolgen verschlüsselt. Nur eingeladene Familienmitglieder haben Zugriff."
+           data-en="All transmission and storage is encrypted. Only invited family members have access.">
+          Übertragung und Speicherung erfolgen verschlüsselt.
+        </p>
+      </div>
+      <div class="trust-item fade-up">
+        <div class="trust-icon">📤</div>
+        <h4 data-de="Eure Daten, eure Kontrolle" data-en="Your data, your control">Eure Daten, eure Kontrolle</h4>
+        <p data-de="Vollständiger Export jederzeit. Keine Bindung, kein Vendor-Lock-in. Eure Erinnerungen bleiben eure."
+           data-en="Full export at any time. No lock-in. Your memories remain yours.">
+          Vollständiger Export jederzeit. Eure Erinnerungen bleiben eure.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA BANNER
+     ============================================================ -->
+<section class="cta-section" aria-labelledby="cta-heading">
+  <div class="container">
+    <h2 id="cta-heading">
+      <span data-de="Fangt heute an." data-en="Start today.">Fangt heute an.</span>
+    </h2>
+    <p data-de="Jeder Tag ohne Ahnenecho ist ein Tag, an dem Erinnerungen verloren gehen können. Bewahrt das Erbe eurer Familie - gemeinsam."
+       data-en="Every day without Ahnenecho is a day memories can be lost. Preserve your family's legacy - together.">
+      Jeder Tag ohne Ahnenecho ist ein Tag, an dem Erinnerungen verloren gehen können.
+    </p>
+    <div class="cta-buttons">
+      <a href="https://ahnenecho-lp.vercel.app" class="btn btn-ghost btn-large"
+         data-de="Kostenlos starten" data-en="Start for free"
+         target="_blank" rel="noopener noreferrer">Kostenlos starten</a>
+      <a href="#features" class="btn btn-ghost btn-large"
+         data-de="Alle Funktionen entdecken" data-en="Explore all features">Alle Funktionen entdecken</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo" aria-label="Ahnenecho">
+          <img src="app-icon-light.svg" alt="" width="28" height="34" aria-hidden="true" />
+          <span class="logo-part-dark">Ahnen</span><span class="logo-part-amber">echo</span>
+        </a>
+        <p data-de="Das digitale Familienarchiv. Geschichten, Rezepte, Traditionen und Weisheiten - bewahrt für immer. Von WAMOCON GmbH, entwickelt in Deutschland."
+           data-en="The digital family archive. Stories, recipes, traditions, and wisdom - preserved forever. By WAMOCON GmbH, developed in Germany.">
+          Das digitale Familienarchiv. Von WAMOCON GmbH, entwickelt in Deutschland.
+        </p>
+        <div class="made-in-germany" style="margin-top: 1rem;" aria-label="Entwickelt in Deutschland">
+          <img src="_source_assets/made-in-germany-sign.svg" alt="Entwickelt in Deutschland" width="30" height="30" />
+          <span data-de="Entwickelt in Deutschland" data-en="Developed in Germany">Entwickelt in Deutschland</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-de="App" data-en="App">App</h4>
+        <ul>
+          <li><a href="https://ahnenecho-lp.vercel.app" target="_blank" rel="noopener noreferrer"
+                 data-de="App öffnen" data-en="Open App">App öffnen</a></li>
+          <li><a href="#features" data-de="Funktionen" data-en="Features">Funktionen</a></li>
+          <li><a href="#pricing" data-de="Preise" data-en="Pricing">Preise</a></li>
+          <li><a href="#how-it-works" data-de="So funktioniert's" data-en="How it works">So funktioniert's</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-de="Rechtliches" data-en="Legal">Rechtliches</h4>
+        <ul>
+          <li><a href="impressum.html" data-de="Impressum" data-en="Imprint">Impressum</a></li>
+          <li><a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy">Datenschutz</a></li>
+          <li><a href="agb.html" data-de="AGB" data-en="Terms & Conditions">AGB</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span data-de="© 2026 WAMOCON GmbH · Alle Rechte vorbehalten" data-en="© 2026 WAMOCON GmbH · All rights reserved">© 2026 WAMOCON GmbH · Alle Rechte vorbehalten</span>
+      <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+        <a href="impressum.html" data-de="Impressum" data-en="Imprint">Impressum</a>
+        <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy">Datenschutz</a>
+        <a href="agb.html" data-de="AGB" data-en="T&amp;C">AGB</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     COOKIE BANNER
+     ============================================================ -->
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-modal="true" aria-labelledby="cookie-title">
+  <p class="cookie-text" id="cookie-title">
+    <strong data-de="Cookies & Datenschutz" data-en="Cookies & Privacy">Cookies &amp; Datenschutz</strong><br />
+    <span data-de='Wir verwenden technisch notwendige Cookies für den Betrieb dieser Website. Details in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.'
+          data-en='We use technically necessary cookies to operate this website. Details in our <a href="datenschutz.html">Privacy Policy</a>.'>
+      Wir verwenden technisch notwendige Cookies für den Betrieb dieser Website. Details in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.
+    </span>
+  </p>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-accept" id="cookie-accept"
+            data-de="Akzeptieren" data-en="Accept">Akzeptieren</button>
+    <button class="cookie-btn cookie-decline" id="cookie-decline"
+            data-de="Ablehnen" data-en="Decline">Ablehnen</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
